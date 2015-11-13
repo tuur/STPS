@@ -1,5 +1,5 @@
-# Pattern Structures of Syntactic Trees for Relation Extraction
-Code for using Pattern Structures of Syntactic Trees
+# Pattern Structures of Syntactic Trees
+Code that was used for the tree classification method based on pattern structures described in the ICFCA`15 paper.
 
 tba
 
