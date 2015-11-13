@@ -19,7 +19,7 @@ The tool includes the following functionalities:
 
 ##### Classification with fixed Patterns
 
-### Data file formats
+### File formats
 We use three different data formats. Examples are given for the sentences:
 * 'A relates to B .'
 * 'A is not related to B'
