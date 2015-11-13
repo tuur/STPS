@@ -92,6 +92,8 @@ author={Leeuwenberg, Artuur and Buzmakov, Aleksey and Toussaint, Yannick and Nap
 title={Exploring Pattern Structures of Syntactic Trees for Relation Extraction},
 year={2015},
 booktitle={Formal Concept Analysis},
+publisher={Springer International Publishing},
+url={http://dx.doi.org/10.1007/978-3-319-19545-2_10}
 }
 ```
 
