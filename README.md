@@ -13,18 +13,18 @@ The tool includes the following functionalities:
 
 ### Usage
 
-#### lpsc_classify
+#### LPSC classification
 
-#### extract_patterns
+#### Pattern Extraction
 
-#### pattern_classify
+#### Classification with fixed Patterns
 
 ### Data file formats
 We use three different data formats. Examples are given for the sentences:
 * 'A relates to B .'
 * 'A is not related to B'
 
-####data.trees
+####Trees
 The trees should be given in Penn Treebank bracketing style, and should be separated by an empty line.
 For the example:
 
@@ -47,14 +47,14 @@ For the example:
     (. .)))
 ```
 
-#### data.labels
+#### Class Labels
 Labels are to be given as one label per line. For example:
 ```
 relation
 norelation
 ```
 
-####data.patterns
+####Patterns
 Patterns are sets of trees, which are described by the Penn TreeBank format. Tree should be separated by one empty line, and sets by two empty lines. For example:
 ```
 (ROOT
