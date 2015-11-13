@@ -1,9 +1,9 @@
-# PSOST
+# Pattern Structures of Syntactic Trees for Relation Extraction
 Code for using Pattern Structures of Syntactic Trees
 
 tba
 
-# Paper
+## Paper
 ```
 @incollection{
 author={Leeuwenberg, Artuur and Buzmakov, Aleksey and Toussaint, Yannick and Napoli, Amedeo},
