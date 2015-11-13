@@ -19,18 +19,18 @@ If you use this tool, please refer to the ICFCA`15 paper.
 
 ## Usage
 
-# lpsc_classify
+### lpsc_classify
 
-# extract_patterns
+### extract_patterns
 
-# pattern_classify
+### pattern_classify
 
 ## Data file formats
 We use three different data formats. Examples are given for the sentences:
 * 'A relates to B .'
 * 'A is not related to B'
 
-#data.trees
+###data.trees
 The trees should be given in Penn Treebank bracketing style, and should be separated by an empty line.
 For the example:
 ```
@@ -52,14 +52,14 @@ For the example:
     (. .)))
 ```
 
-# data.labels
+### data.labels
 Labels are to be given as one label per line. For example:
 ```
 relation
 norelation
 ```
 
-#data.patterns
+###data.patterns
 Patterns are sets of trees, which are described by the Penn TreeBank format. Tree should be separated by one empty line, and sets by two empty lines. For example:
 ```
 (ROOT
