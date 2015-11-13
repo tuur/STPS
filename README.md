@@ -1,19 +1,15 @@
 ## Pattern Structure of Syntactic Trees
 
-Tool for syntax tree classification, based on the Syntax Tree Pattern Structure (STPS), which was used for extraction of drug-drug interactions from biomedical texts as described in the ICFCA 2015 paper.
-
+This tool can be used for syntactic tree classification, based on the Syntax Tree Pattern Structure (STPS). This method is associated with, and described in A.Leeuwenberg et a. (2015).
 This tool includes the following functionalities:
 
 * Tree Classification using Lazy Pattern Structure Classification
 * Class-characteristic Tree pattern extraction
 * Tree Classification based on Extracted Patterns
 
-If you use this tool, please refer to the ICFCA`15 paper.
-
-### Requires
+### Requirements
 * Python2.7
 * nltk (tested on X)
-
 
 ### Usage
 
@@ -87,7 +83,6 @@ Patterns are sets of trees, which are described by the Penn TreeBank format. Tre
           NP)))
     (. .)))
 ```
-
 ## Reference
 ```
 @incollection{
@@ -95,9 +90,7 @@ author={Leeuwenberg, Artuur and Buzmakov, Aleksey and Toussaint, Yannick and Nap
 title={Exploring Pattern Structures of Syntactic Trees for Relation Extraction},
 year={2015},
 booktitle={Formal Concept Analysis},
-volume={9113},
-series={Lecture Notes in Computer Science},
-publisher={Springer International Publishing},
-pages={153-168},
 }
 ```
+
+
