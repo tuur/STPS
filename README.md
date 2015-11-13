@@ -1,9 +1,9 @@
 ## Pattern Structure of Syntactic Trees
 
-This tool can be used for syntactic tree classification, based on the Syntax Tree Pattern Structure (STPS). This method is associated with, and described in [(Leeuwenberg et al., 2015)](link.springer.com/chapter/10.1007/978-3-319-19545-2_10). The ICFCA`15 conference slides can be found [here](https://github.com/tuur/STPS/raw/master/slides.pdf).
+This tool can be used for syntactic tree classification, based on the Syntax Tree Pattern Structure (STPS). This method is associated with, and described in [(Leeuwenberg et al., 2015)](link.springer.com/chapter/10.1007/978-3-319-19545-2_10). It was used for drug-drug interaction relation extaction. The ICFCA`15 conference slides can be found [here](https://github.com/tuur/STPS/raw/master/slides.pdf).
 The tool includes the following functionalities:
 
-* Tree Classification using Lazy Pattern Structure Classification
+* Tree Classification using Lazy Positive Hypothesis Classification (LPHC)
 * Class-characteristic Tree pattern extraction
 * Tree Classification based on Extracted Patterns
 
@@ -13,7 +13,7 @@ The tool includes the following functionalities:
 
 ### Usage
 
-##### LPSC classification
+##### LPHC classification
 
 ##### Pattern Extraction
 
