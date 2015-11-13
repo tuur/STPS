@@ -4,7 +4,7 @@ Code for using Pattern Structures of Syntactic Trees
 tba
 
 # Paper
-
+```
 @incollection{
 author={Leeuwenberg, Artuur and Buzmakov, Aleksey and Toussaint, Yannick and Napoli, Amedeo},
 title={Exploring Pattern Structures of Syntactic Trees for Relation Extraction},
@@ -15,3 +15,4 @@ series={Lecture Notes in Computer Science},
 publisher={Springer International Publishing},
 pages={153-168},
 }
+```
