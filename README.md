@@ -1,7 +1,7 @@
 ## Pattern Structure of Syntactic Trees
 
-This tool can be used for syntactic tree classification, based on the Syntax Tree Pattern Structure (STPS). This method is associated with, and described in A.Leeuwenberg et a. (2015).
-This tool includes the following functionalities:
+This tool can be used for syntactic tree classification, based on the Syntax Tree Pattern Structure (STPS). This method is associated with, and described in (Leeuwenberg et al., 2015). The ICFCA`15 conference slides can be found [here](https://github.com/tuur/STPS/raw/master/slides.pdf).
+The tool includes the following functionalities:
 
 * Tree Classification using Lazy Pattern Structure Classification
 * Class-characteristic Tree pattern extraction
@@ -9,7 +9,7 @@ This tool includes the following functionalities:
 
 ### Requirements
 * Python2.7
-* nltk (tested on X)
+* NLTK
 
 ### Usage
 
@@ -83,6 +83,7 @@ Patterns are sets of trees, which are described by the Penn TreeBank format. Tre
           NP)))
     (. .)))
 ```
+
 ## Reference
 ```
 @incollection{
