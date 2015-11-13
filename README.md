@@ -1,6 +1,6 @@
 ## Pattern Structure of Syntactic Trees
 
-This tool can be used for syntactic tree classification, based on the Syntax Tree Pattern Structure (STPS). This method is associated with, and described in (Leeuwenberg et al., 2015). The ICFCA`15 conference slides can be found [here](https://github.com/tuur/STPS/raw/master/slides.pdf).
+This tool can be used for syntactic tree classification, based on the Syntax Tree Pattern Structure (STPS). This method is associated with, and described in [(Leeuwenberg et al., 2015)](link.springer.com/chapter/10.1007/978-3-319-19545-2_10). The ICFCA`15 conference slides can be found [here](https://github.com/tuur/STPS/raw/master/slides.pdf).
 The tool includes the following functionalities:
 
 * Tree Classification using Lazy Pattern Structure Classification
@@ -8,8 +8,8 @@ The tool includes the following functionalities:
 * Tree Classification based on Extracted Patterns
 
 ### Requirements
-* Python2.7
-* NLTK
+* [Python 2.7](https://www.python.org/download/releases/2.7/)
+* [NLTK 3.0](http://www.nltk.org/)
 
 ### Usage
 
@@ -27,6 +27,7 @@ We use three different data formats. Examples are given for the sentences:
 ####data.trees
 The trees should be given in Penn Treebank bracketing style, and should be separated by an empty line.
 For the example:
+<table>
 ```
 (ROOT
   (S
@@ -45,7 +46,7 @@ For the example:
           (NP (NNP B)))))
     (. .)))
 ```
-
+</table>
 #### data.labels
 Labels are to be given as one label per line. For example:
 ```
