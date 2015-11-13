@@ -25,7 +25,7 @@ We use three different data formats. Examples are given for the sentences:
 * 'A is not related to B'
 
 #####Trees
-The trees should be given in Penn Treebank bracketing style, and should be separated by an empty line.
+The trees should be given in Penn Treebank bracketing style (fancy indentation is not obligatory), and should be separated by an empty line.
 For the example:
 
 ```
