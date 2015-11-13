@@ -27,7 +27,7 @@ We use three different data formats. Examples are given for the sentences:
 ####data.trees
 The trees should be given in Penn Treebank bracketing style, and should be separated by an empty line.
 For the example:
-<table>
+
 ```
 (ROOT
   (S
@@ -46,7 +46,7 @@ For the example:
           (NP (NNP B)))))
     (. .)))
 ```
-</table>
+
 #### data.labels
 Labels are to be given as one label per line. For example:
 ```
