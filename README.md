@@ -1,4 +1,4 @@
-# Pattern Structures of Syntactic Trees
+# Pattern Structure of Syntactic Trees
 
 Tool that was used for the tree classification method based on pattern structures described in the ICFCA`15 paper.
 It includes the following functionalities:
