@@ -62,8 +62,7 @@ Patterns are sets of trees, which are described by the Penn TreeBank format. Tre
     NP
     (VP (VBZ relates)
       (PP (TO to)
-        NP))
-    (. .)))
+        NP))))
 
 
 (ROOT
@@ -72,8 +71,7 @@ Patterns are sets of trees, which are described by the Penn TreeBank format. Tre
     (VP (VBZ is) (RB not)
       (ADJP (VBN related)
         (PP (TO to)
-          NP)))
-    (. .)))
+          NP)))))
 
 (ROOT
   (S
@@ -81,8 +79,7 @@ Patterns are sets of trees, which are described by the Penn TreeBank format. Tre
     (VP (VBZ does) (RB not)
       (VP (VB relate)
         (PP (TO to)
-          NP)))
-    (. .)))
+          NP)))))
 ```
 
 ## Reference
