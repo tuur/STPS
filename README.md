@@ -1,9 +1,13 @@
 # Pattern Structures of Syntactic Trees
-Code that was used for the tree classification method based on pattern structures described in the ICFCA`15 paper.
 
-tba
+Tool that was used for the tree classification method based on pattern structures described in the ICFCA`15 paper.
+It includes the following functionalities:
+⋅⋅* Extraction of Class-characteristic Tree Patterns
+⋅⋅* Tree simplification
+⋅⋅* Tree Classification
 
-## Paper
+
+## ICFCA`15 Paper
 ```
 @incollection{
 author={Leeuwenberg, Artuur and Buzmakov, Aleksey and Toussaint, Yannick and Napoli, Amedeo},
