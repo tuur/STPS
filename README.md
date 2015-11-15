@@ -4,7 +4,7 @@ This tool can be used for syntactic tree classification, based on the Syntax Tre
 The tool includes the following functionalities:
 
 * Tree Classification using Lazy Positive Hypothesis Classification (LPHC)
-* Class-characteristic Tree pattern extraction
+* Extraction of Class-characteristic Tree Patterns
 * Tree Classification based on Extracted Patterns
 
 ### Requirements
