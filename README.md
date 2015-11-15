@@ -55,7 +55,7 @@ norelation
 ```
 
 #####Patterns
-Patterns are sets of trees, which are described by the Penn TreeBank format. Tree should be separated by one empty line, and sets by two empty lines. For example:
+Patterns are sets of trees, which are described by the Penn TreeBank format. Trees should be separated by one empty line, and sets by two empty lines. For example:
 ```
 (ROOT
   (S
