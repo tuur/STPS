@@ -19,7 +19,7 @@ The code is not very clean yet, so in case of errors or suggestions feel free to
 
 ### Usage
 A very simple demo example is included, which classifies questions.
-Corresponding calls are given. 
+Corresponding calls are given below. 
 
 ##### LPHC classification
 The code allows classification of sets of trees (SOTS), as the similarity operator works on sets of trees. Usually sentences are represented as set containing only one tree, namely the parse tree of that sentence. Examples of the file formats are given below, and in the example folder.
