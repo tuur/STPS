@@ -4,7 +4,7 @@ This tool can be used for syntactic tree classification, based on the Syntax Tre
 The tool includes the following functionalities:
 
 * Syntactic Tree Classification using Lazy Positive Hypothesis Classification (LPHC)
-* Visualization, Penn Treebank Output, and Latex output of Trees (using [forest](https://www.ctan.org/pkg/forest?lang=en))
+* Visualization, Penn Treebank Output, and Latex output of Trees ([forest](https://www.ctan.org/pkg/forest?lang=en), or [qtree](https://www.ctan.org/pkg/qtree?lang=en) format)
 
 It will hopefully soon also include:
 * Tree simplifications
