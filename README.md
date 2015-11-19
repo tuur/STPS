@@ -22,12 +22,12 @@ The code is not very clean yet, so in case of errors or suggestions feel free to
 ##### LPHC classification
 The code allows classification of sets of trees (SOT). Sentences can be represented as a singleton containing only one tree, namely the parse tree of that sentence. In the toy example we classify phrases to be questions or no questions.
 
-The following command is to be used to classify the unlabeled SOT, stored in `example/unlabeled/unlabeled_trees.sot`, using as positive examples the SOT in `example/labeled/trees.sot` with their corresponding labels in `example/labeled/classlabels.labels`:
+The following command is to be used to classify the unlabeled SOT, stored in "example/unlabeled/unlabeled_trees.sot", using as positive examples the SOT in "example/labeled/trees.sot" with their corresponding labels in "example/labeled/classlabels.labels":
 
 ```
 python lphc.py example/unlabeled/unlabeled_trees.sot example/labeled/trees.sot example/labeled/classlabels.labels question sentence -projection 1 -output_hypotheses 'pos_hyps.out' -output_origins 'origins.out'
 ```
-As argument the label(s) of the positive class (here `question`), and those of the negative class (here `sentence`) should be provided. There are options for using the branch projection, outputting the positive hypotheses/patterns that were found, and the links that indicate which positive hypotheses/patterns were used to classify each unlabeled SOT (origins).
+As argument the label(s) of the positive class (here "question"), and those of the negative class (here "sentence") should be provided. There are options for using the branch projection, outputting the positive hypotheses/patterns that were found, and the links that indicate which positive hypotheses/patterns were used to classify each unlabeled SOT (origins).
 
 For more information run:
 
@@ -39,7 +39,7 @@ To visualize the trees from the labeled example data (SOT 2 to 4), you can use:
 
 ```python visualize_sot.py example/labeled/trees.sot -s 1 -indices 2-4```
 
-You can also use the script to visualize the found positive hypotheses. For example, after you run the lphc.py command mentioned above, and `pos_hyps.out` and `origins.out` are created. You can run:
+You can also use the script to visualize the found positive hypotheses. For example, after you run the lphc.py command mentioned above, and "pos_hyps.out" and "origins.out" are created. You can run:
 
 ```
 python visualize_sot.py pos_hyps.out -origins origins.out -totree 1 -indices 2
