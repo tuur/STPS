@@ -116,7 +116,7 @@ class TTree:
        return r"\begin{figure}[h!]\resizebox{0.9\textwidth}{!}{\begin{forest}"+foreststr3+"\end{forest}}\end{figure}"
    
    def nltklatex(self):
-          return r"\begin{figure}[h!]\resizebox{0.9\textwidth}{!}{"+nltktree(str(self)).pprint_latex_qtree().replace('_','\_')+r"}\end{figure}"
+          return r"\begin{figure}[h!]\resizebox{0.9\textwidth}{!}{"+nltktree.fromstring(str(self)).pformat_latex_qtree().replace('_','\_')+r"}\end{figure}"
 
    def show(self):
        nltktree.fromstring('( ' + str(self) + ')').draw()
