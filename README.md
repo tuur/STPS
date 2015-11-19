@@ -4,12 +4,14 @@ This tool can be used for syntactic tree classification, based on the Syntax Tre
 The tool includes the following functionalities:
 
 * Tree Classification using Lazy Positive Hypothesis Classification (LPHC) (with or withour branch projection)
-* Visualization, Penn Treebank Output, and Latex output of Trees
+* Some Visualization, Penn Treebank Output, and Latex output of Trees (using [forest](https://www.ctan.org/pkg/forest?lang=en))
 
 And will soon also include:
 * Tree simplifications
 * Extraction of Class-characteristic Tree Patterns
 * Tree Classification based on Extracted Patterns
+
+The code is not very clean yet, so in case of errors or suggestions feel free to send me an e-mail.
 
 ### Requirements
 * [Python 2.7](https://www.python.org/download/releases/2.7/)
@@ -24,7 +26,7 @@ The code allows classification of sets of trees (SOTS), as the similarity operat
 
 To classify the set of unlabeled SOTS, stored in `example/unlabeled/unlabeled_trees.ptb`, using as example data the SOTS in `example/labeled/trees.sot` with their corresponding labels in `example/labeled/classlabels.labels` the following command is to be used:
 ```
-python lphc.py example/unlabeled/unlabeled_trees.ptb example/labeled/trees.sot example/labeled/classlabels.labels question sentence -projection 1 -output_hypotheses 'patterns.out' -origins 'origins.out'
+python lphc.py example/unlabeled/unlabeled_trees.ptb example/labeled/trees.sot example/labeled/classlabels.labels question sentence -projection 1 -output_hypotheses 'pos_hyps.out' -output_origins 'origins.out'
 ```
 As argument the label(s) of the positive class (here `question`), and those of the negative class (here `sentence`) should be provided. There are options for using the branch projection, outputting the positive hypotheses/patterns that were found, and the links that indicate which positive hypotheses/patterns were used to classify each unlabeled SOT.
 
@@ -33,10 +35,19 @@ For more information run:
 
 ##### Visualization
 
-To visualize SOT files, you can use:
-```python visualize_sot.py example/labeled/trees.sot -s 1```
+To visualize the trees from the labeled example data (SOT 2 to 4), you can use:
+```python visualize_sot.py example/labeled/trees.sot -s 1 -indices 2-4```
 
-You can also use the script to visualize the found positive hypotheses.
+You can also use the script to visualize the found positive hypotheses. For example, after you run the lphc.py command mentioned above, and `pos_hyps.out` and `origins.out` are created. You can run:
+
+```
+python visualize_sot.py pos_hyps.out -origins origins.out -totree 1 -indices 2
+```
+
+This will visualize the positive hypotheses used to classify the third unlabeled SOT (index 2) as a question. Notice that the totree option merges the branches obtained after the projection to a single tree.
+
+For more detailed information run:
+```python visualize_sot -h```
 
 ### File formats
 We use three different data formats. Examples are given for the sentences:
