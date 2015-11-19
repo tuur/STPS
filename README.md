@@ -22,11 +22,10 @@ The tool includes the following functionalities:
 ### File formats
 We use three different data formats. Examples are given for the sentences:
 * 'A relates to B .'
-* 'A is not related to B'
+* 'A is not related to B .'
 
-#####Trees
-The trees should be given in Penn Treebank bracketing style (fancy indentation is not obligatory), and should be separated by an empty line.
-For the example:
+#####Sets of Trees (.sot)
+STPS uses similarity on sets of trees. Trees are described by the Penn TreeBank format. Trees should be separated by one empty line, and sets by two empty lines. Usually sentences are represented as set containing only one tree, namely the parse tree of that sentence. For example:
 
 ```
 (ROOT
@@ -36,7 +35,8 @@ For the example:
       (PP (TO to)
         (NP (NNP B))))
     (. .)))
-    
+
+
 (ROOT
   (S
     (NP (NNP A))
@@ -47,39 +47,11 @@ For the example:
     (. .)))
 ```
 
-##### Class Labels
+##### Class Labels (.lab)
 Labels are to be given as one label per line. For example:
 ```
 relation
 norelation
-```
-
-#####Patterns
-Patterns are sets of trees, which are described by the Penn TreeBank format. Trees should be separated by one empty line, and sets by two empty lines. For example:
-```
-(ROOT
-  (S
-    NP
-    (VP (VBZ relates)
-      (PP (TO to)
-        NP))))
-
-
-(ROOT
-  (S
-    NP
-    (VP (VBZ is) (RB not)
-      (ADJP (VBN related)
-        (PP (TO to)
-          NP)))))
-
-(ROOT
-  (S
-    NP
-    (VP (VBZ does) (RB not)
-      (VP (VB relate)
-        (PP (TO to)
-          NP)))))
 ```
 
 ## Reference
