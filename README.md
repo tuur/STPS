@@ -1,4 +1,4 @@
-## Pattern Structure of Syntactic Trees
+## A Pattern Structure for Syntactic Trees
 
 This tool can be used for syntactic tree classification, based on the Syntax Tree Pattern Structure (STPS). It is associated with, and described in [(Leeuwenberg et al., 2015)](http://link.springer.com/chapter/10.1007%2F978-3-319-19545-2_10), where it was used for drug-drug interaction relation extraction. The ICFCA`15 conference slides can be found [here](https://github.com/tuur/STPS/raw/master/slides.pdf).
 The tool includes the following functionalities:
