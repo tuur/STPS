@@ -85,10 +85,12 @@ norelation
 ```
 
 ##### Origins
-These can be created by `lphc.py -origins originfile` and contain the links between the positive hypotheses that were found, and their corresponding unlabeled object and labeled example. They have the format `unlabeled_index labeled_index positive_hypothesis_index`. For example:
+These can be created by `lphc.py` during classification and contain the links between indices of the positive hypotheses that were found, and their corresponding unlabeled and labeled indices. They have the format:
+```unlabeled_index <space> labeled_index <tab> positive_hypothesis_index```. 
+For example:
 ```
-0 2 0
-3 2 1
+0 2    0
+3 2    1
 ```
 
 
