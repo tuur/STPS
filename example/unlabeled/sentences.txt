@@ -1,0 +1,3 @@
+Is it a question or a sentence ?
+This would be classified as sentence .
+Why is this a question

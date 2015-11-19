@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (DT a) (NN test) (NN sentence)))
+    (. .)))
+
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT this))
+    (NP (DT a) (NN test) (NN sentence))
+    (. ?)))
+
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD would)
+      (NP (PRP I))
+      (VP (VB know)
+        (SBAR (IN if)
+          (S
+            (NP (DT this))
+            (VP (VBZ is)
+              (NP (DT a) (NN question)))))))
+    (. ?)))
+
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB believe)
+        (SBAR
+          (S
+            (NP (DT this))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (NN question))
+                (PP (IN at)
+                  (NP (DT all)))))))))
+    (. .)))
+
+
+(ROOT
+  (NP
+    (NP (DT No) (NN question))
+    (PP (IN about)
+      (NP (PRP it)))
+    (. .)))
+
+
+(ROOT
+  (SQ
+    (SQ
+      (NP (DT This))
+      (VP (VBZ is) (RB not)
+        (NP (DT a) (NN question))))
+    (, ,)
+    (CC or)
+    (SQ (VBZ is)
+      (NP (PRP it)))
+    (. ?)))
+
+
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (, ,)
+    (NP (IN but) (DT this))
+    (VP (VBZ is) (RB not))
+    (. .)))

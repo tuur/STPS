@@ -1,0 +1,28 @@
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP it))
+    (NP
+      (NP (DT a) (NN question))
+      (CC or)
+      (NP (DT a) (NN sentence)))
+    (. ?)))	
+
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD would)
+      (VP (VB be)
+        (VP (VBN classified)
+          (PP (IN as)
+            (NP (NN sentence))))))
+    (. .)))
+
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT this))
+        (NP (DT a) (NN question))))))
