@@ -22,13 +22,13 @@ A very simple demo example is included, which classifies questions.
 Corresponding calls are given below. 
 
 ##### LPHC classification
-The code allows classification of sets of trees (SOTS), as the similarity operator works on sets of trees. Usually sentences are represented as set containing only one tree, namely the parse tree of that sentence. Examples of the file formats are given below, and in the example folder.
+The code allows classification of sets of trees (SOTS), as the similarity operator works on sets of trees. Usually sentences are represented as set containing only one tree, namely the parse tree of that sentence.
 
-To classify the set of unlabeled SOTS, stored in `example/unlabeled/unlabeled_trees.ptb`, using as example data the SOTS in `example/labeled/trees.sot` with their corresponding labels in `example/labeled/classlabels.labels` the following command is to be used:
+To classify the set of unlabeled SOTS, stored in `example/unlabeled/unlabeled_trees.ptb`, using as positive examples the SOTS in `example/labeled/trees.sot` with their corresponding labels in `example/labeled/classlabels.labels` the following command is to be used:
 ```
 python lphc.py example/unlabeled/unlabeled_trees.ptb example/labeled/trees.sot example/labeled/classlabels.labels question sentence -projection 1 -output_hypotheses 'pos_hyps.out' -output_origins 'origins.out'
 ```
-As argument the label(s) of the positive class (here `question`), and those of the negative class (here `sentence`) should be provided. There are options for using the branch projection, outputting the positive hypotheses/patterns that were found, and the links that indicate which positive hypotheses/patterns were used to classify each unlabeled SOT.
+As argument the label(s) of the positive class (here `question`), and those of the negative class (here `sentence`) should be provided. There are options for using the branch projection, outputting the positive hypotheses/patterns that were found, and the links that indicate which positive hypotheses/patterns were used to classify each unlabeled SOT (origins).
 
 For more information run:
 ```python lphc.py -h```
