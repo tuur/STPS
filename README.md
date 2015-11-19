@@ -36,6 +36,7 @@ For more information run:
 ##### Visualization
 
 To visualize the trees from the labeled example data (SOT 2 to 4), you can use:
+
 ```python visualize_sot.py example/labeled/trees.sot -s 1 -indices 2-4```
 
 You can also use the script to visualize the found positive hypotheses. For example, after you run the lphc.py command mentioned above, and `pos_hyps.out` and `origins.out` are created. You can run:
