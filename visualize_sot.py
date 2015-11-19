@@ -20,7 +20,7 @@ if __name__ == "__main__" :
 	parser.add_argument('-p', metavar='-p', type=int, default=1,
 		help='Prints the trees in each set in ptb format (default=1|0)')		
 	parser.add_argument('-latex', metavar='-latex', type=int, default=0,
-		help='Prints the trees in latex forest format (1|default=0). Forest package: https://www.ctan.org/pkg/forest?lang=en')		
+		help='Prints the trees in latex (1) forest, or (2) qtree format (1|2|default=0). Forest package: https://www.ctan.org/pkg/forest?lang=en')		
 			
 		
 	args = parser.parse_args()
@@ -60,9 +60,11 @@ if __name__ == "__main__" :
 			if args.s:
 				print 'leaves:',sot.pprint_leaves()				
 
-			if args.latex:
+			if args.latex == 1:
 				print sot.latex()
-				 
+			elif args.latex == 2:
+				print sot.nltklatex()
+	 
 			if args.show:
 				sot.show()				
 	
