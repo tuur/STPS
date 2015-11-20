@@ -49,7 +49,7 @@ This will visualize the positive hypotheses used to classify the third unlabeled
 
 For more detailed information run:
 
-```python visualize_sot -h```
+```python visualize_sot.py -h```
 
 ### File formats
 We use three different data formats. Examples are given for the sentences:
