@@ -14,7 +14,7 @@ It will hopefully soon also include:
 The code is not very clean yet, so in case of errors or suggestions feel free to send me an e-mail.
 
 ### Requirements
-* [Python 2.7](https://www.python.org/download/releases/2.7/) (with [pyparsing](http://pyparsing.wikispaces.com/))
+* [Python 2.7](https://www.python.org/download/releases/2.7/) (with [pyparsing](http://pyparsing.wikispaces.com/Download+and+Installation))
 * [NLTK 3.0](http://www.nltk.org/)
 
 ### Usage
