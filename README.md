@@ -1,17 +1,17 @@
 ## A Pattern Structure for Syntactic Trees
 
-This tool can be used for syntactic tree classification, based on the Syntax Tree Pattern Structure (STPS). It is associated with, and described in [(Leeuwenberg et al., 2015)](http://link.springer.com/chapter/10.1007%2F978-3-319-19545-2_10), where it was used for drug-drug interaction relation extraction. The ICFCA`15 conference slides can be found [here](https://github.com/tuur/STPS/raw/master/slides.pdf).
+This tool can be used for binary classification of syntactic trees. It is based on the Syntax Tree Pattern Structure (STPS). It is associated with, and described in [(Leeuwenberg et al., 2015)](http://link.springer.com/chapter/10.1007%2F978-3-319-19545-2_10), where it was used for drug-drug interaction relation extraction. The ICFCA`15 conference slides can be found [here](https://github.com/tuur/STPS/raw/master/slides.pdf).
 The tool includes the following functionalities:
 
 * Syntactic Tree Classification using Lazy Positive Hypothesis Classification (LPHC)
 * Visualization, Penn Treebank Output, and Latex output of Trees ([forest](https://www.ctan.org/pkg/forest?lang=en), or [qtree](https://www.ctan.org/pkg/qtree?lang=en) format)
 
-It will hopefully soon also include:
+<!--It will hopefully soon also include:
 * Tree simplifications
 * Extraction of Class-characteristic Tree Patterns
-* Tree Classification based on Extracted Patterns
+* Tree Classification based on Extracted Patterns -->
 
-The code is not very clean yet, so in case of errors or suggestions feel free to send me an e-mail.
+The code is not superclean, so in case of errors or suggestions feel free to send me an e-mail.
 
 ### Requirements
 * [Python 2.7](https://www.python.org/download/releases/2.7/) (with [pyparsing](http://pyparsing.wikispaces.com/Download+and+Installation), and [python-tk](http://tkinter.unpythonic.net/wiki/How_to_install_Tkinter))
@@ -20,9 +20,11 @@ The code is not very clean yet, so in case of errors or suggestions feel free to
 ### Usage
 
 ##### LPHC classification
-The code allows classification of sets of trees (SOT). Sentences can be represented as a singleton containing only one tree, namely the parse tree of that sentence. In the toy example we classify phrases to be questions or no questions.
+In short, Lazy Positive Hypothesis Classification uses a set of positive and negative examples ('training data'). It classifies new instances based on if it can find a similarity (a subtree) with a positive example that is not shared with any negative example. Such similarity is called a positive hypothesis. The similarity operator we use is defined by the pattern structure STPS, and is based on tree intersection.
 
-The following command is to be used to classify the unlabeled SOT, stored in *example/unlabeled/unlabeled_trees.sot*, using as positive examples the SOT in *example/labeled/trees.sot* with their corresponding labels in *example/labeled/classlabels.labels*:
+The code allows classification of trees, or sets of trees (SOT). Sentences can be represented as a singleton containing only one tree, e.g. the parse tree of that sentence. In the toy example we classify phrases to be questions or no questions.
+
+The following command is to be used to classify the unlabeled SOT, stored in *example/unlabeled/unlabeled_trees.sot*, using as positive and negative examples the SOT in *example/labeled/trees.sot* with their corresponding labels in *example/labeled/classlabels.labels*:
 
 ```
 python lphc.py example/unlabeled/unlabeled_trees.sot example/labeled/trees.sot example/labeled/classlabels.labels question sentence -projection 1 -output_hypotheses 'pos_hyps.out' -output_origins 'origins.out'
