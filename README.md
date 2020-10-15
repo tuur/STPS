@@ -11,7 +11,7 @@ The tool includes the following functionalities:
 * Extraction of Class-characteristic Tree Patterns
 * Tree Classification based on Extracted Patterns -->
 
-In case of errors or suggestions feel free to send me an e-mail (see paper for email).
+In case of errors or suggestions feel free to send me an e-mail!
 
 ### Requirements
 * [Python 2.7](https://www.python.org/download/releases/2.7/) (with [pyparsing](http://pyparsing.wikispaces.com/Download+and+Installation), and [python-tk](http://tkinter.unpythonic.net/wiki/How_to_install_Tkinter))
